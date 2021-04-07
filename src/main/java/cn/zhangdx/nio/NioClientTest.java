@@ -14,7 +14,7 @@ public class NioClientTest {
         SocketChannel socketChannel = SocketChannel.open();
         socketChannel.connect(new InetSocketAddress("localhost", 8080));
         log.debug("waiting...");
-        socketChannel.write(Charset.defaultCharset().encode("12314324gfhgfgh\n"));
+        socketChannel.write(Charset.defaultCharset().encode("测试发送的文本\n你好\n"));
         System.in.read();
     }
 }
